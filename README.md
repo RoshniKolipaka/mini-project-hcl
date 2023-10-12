@@ -1,12 +1,4 @@
 
-- Infuria
-- ReactJs
-- Tailwind CSS
-- Ganache-CLI
-- Solidity
-- Web3js
-- Faucet
-
 ## Running the demo
 
 To run the demo follow these steps:
