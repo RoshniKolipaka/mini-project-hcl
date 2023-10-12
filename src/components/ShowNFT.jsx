@@ -36,7 +36,7 @@ const ShowNFT = () => {
           justify-center bg-black bg-opacity-50 transform
           transition-transform duration-300 ${showModal}`}
     >
-      <div className="bg-[#151c25] shadow-xl shadow-[#e32970] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
+      <div className="bg-[#151c25] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
         <div className="flex flex-col">
           <div className="flex flex-row justify-between items-center">
             <p className="font-semibold text-gray-400">Buy NFT</p>
@@ -88,11 +88,10 @@ const ShowNFT = () => {
             {connectedAccount == nft?.owner ? (
               <button
                 className="flex flex-row justify-center items-center
-                w-full text-[#e32970] text-md border-[#e32970]
+                w-full text-black text-md bg-gradient-to-r from-blue-200 to-green-200 
                 py-2 px-5 rounded-full bg-transparent 
-                drop-shadow-xl border hover:bg-[#bd255f]
-                hover:bg-transparent hover:text-white
-                hover:border hover:border-[#bd255f]
+                 border 
+                
                 focus:outline-none focus:ring mt-5"
                 onClick={onChangePrice}
               >
@@ -101,11 +100,10 @@ const ShowNFT = () => {
             ) : (
               <button
                 className="flex flex-row justify-center items-center
-                w-full text-white text-md bg-[#e32970]
-                hover:bg-[#bd255f] py-2 px-5 rounded-full
+                w-full text-black text-md bg-gradient-to-r from-blue-200 to-green-200
+              py-2 px-5 rounded-full
                 drop-shadow-xl border border-transparent
-                hover:bg-transparent hover:text-[#e32970]
-                hover:border hover:border-[#bd255f]
+               
                 focus:outline-none focus:ring mt-5"
                 onClick={handleNFTPurchase}
               >

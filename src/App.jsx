@@ -18,8 +18,8 @@ const App = () => {
   }, [])
 
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-hero">
+    <div className="min-h-screen bg-gradient-to-r from-blue-200 to-green-200">
+      <div >
         <Header />
         <Hero />
       </div>
